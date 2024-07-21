@@ -454,9 +454,11 @@ span.carousel-control-next-icon {
 }
 
 .project_text {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
-            line-clamp: 4; 
-    -webkit-box-orient: vertical;
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 12.6em;
+  min-height: 12.6em;
+  line-height: 1.8em;
  }
